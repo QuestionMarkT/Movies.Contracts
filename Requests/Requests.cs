@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Movies.Contracts.Requests;
 
-public class CreateMovieRequests
+public class CreateMovieRequest
 {
     public required string Title { get; init; }
     public required int YearOfRelease { get; init; }
     public required IEnumerable<string> Genres { get; init; } = [];
 }
 
-public class UpdateMovieRequests
+public class UpdateMovieRequest
 {
     public required string Title { get; init; }
     public required int YearOfRelease { get; init; }
